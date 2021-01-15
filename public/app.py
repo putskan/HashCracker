@@ -11,6 +11,12 @@ def index():
     return render_template('index.html')
 
 
+
+@app.route('/api')
+def rest_api():
+	return render_template('api.html')
+
+
 if __name__ == '__main__':
     """
     handle website

@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Show Me The IP</title>
+		<title>Hash Cracker</title>
 		<!-- mobile compatibility -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- website-specific css & js -->
-		<script src="{{ url_for('static', filename='js/script.js') }}" crossorigin="anonymous" defer></script>
+		<script type="module" src="{{ url_for('static', filename='js/script.js') }}" crossorigin="anonymous"></script>
 		<link href="{{ url_for('static', filename='css/stylesheet.css') }}" rel="stylesheet" type="text/css" >
 	<body class="stars-bg">
 		<header class="">
@@ -15,11 +15,20 @@
 		</header>
 		
 		<div id="main-wrapper">
-			<h1 class="title flex-item">Your IP Address Information</h1>
-			<h3 class="sub-title flex-item">IP Address</h3>
-			<h4 class="data flex-item">192.168.1.1</h4>
-			<h3 class="sub-title flex-item">Originating Country</h3>
-			<h4 class="data flex-item">Israel</h4>
+			<h1 class="title">Hash Cracker</h1>
+			<br class="flex-linebreak">			
+			<h3 class="sub-title">Enter MD5:</h3>
+			<br class="flex-linebreak">			
+			<input id="md5-input"></input>
+			<br class="flex-linebreak">
+			<button id="crack-button" type="button">Crack</button>
+			<!-- <h4 class="data">192.168.1.1</h4> -->
+			<br class="flex-linebreak">
+			<h3 class="sub-title">Password:</h3>
+			<br class="flex-linebreak">
+			<h4 id="cracked-password" class="mid-size-text">None</h4>
+			<br class="flex-linebreak">
+			<button onclick="location.href='./api'" type="button">RestAPI</button>
 		</div>
 
 		<footer class="">
@@ -29,3 +38,5 @@
 		</footer>
 	</body>
 </html>
+
+<!-- OPTIMIZE BG -->
