@@ -16,3 +16,48 @@ html, body {
 	width: 100%;
 	min-height: 100%;
 }
+
+
+.stars-bg {
+	position: relative;
+	background-size: cover;
+	background: url(../images/stars.jpg);
+}
+
+.stars-bg::before {
+	content: '';
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom: 0;
+	opacity: 1;
+	background-color: black;
+}
+
+
+#main-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#main-wrapper .flex-item {
+	width: 100%;
+	text-align: center;
+}
+
+.title {
+	padding-top: 150px;
+}
+
+.sub-title {
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+footer {
+	padding-top: 100px;
+	text-align: center;
+}
