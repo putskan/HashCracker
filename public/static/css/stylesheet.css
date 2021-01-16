@@ -28,7 +28,6 @@ body {
 	position: relative;
 	background-size: cover;
 	background: url(../images/stars.jpg);
-	overflow: hidden;
 	z-index: -2
 }
 
@@ -78,7 +77,7 @@ body {
 
 button {
 	font-size: 20px;
-	margin-top: 30px;
+	margin: 45px 0px;
 	background-color: inherit;
 	border: #f5f6fa solid 1px;
 	padding: 5px 10px;

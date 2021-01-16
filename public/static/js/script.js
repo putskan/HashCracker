@@ -7,6 +7,7 @@ function crack(md5) {
     if (passwords.hasOwnProperty(formattedMd5)) {
         return passwords[formattedMd5];
     }
+    return '';
 }
 function handleUICrackRequest() {
     crackedPassElem.innerText = 'Loading...';
@@ -14,24 +15,19 @@ function handleUICrackRequest() {
     console.log(typeof md5);
     console.log(md5);
     let pass = crack(md5);
-    if (pass) {
+    if (pass !== '') {
         crackedPassElem.innerText = pass;
     }
     else {
         crackedPassElem.innerText = 'Crack Failed';
     }
 }
-function handleAPICrackRequest() {
-    console.log('hi');
-    /*let queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const product = urlParams.get('md5')
-*/
-}
 /* in the previous project - optimize get element by od and remove comments*/
 /* in the previous project - optimize get element by od and remove comments*/
 /* in the previous project - optimize get element by od and remove comments*/
 /* in the previous project - optimize get element by od and remove comments*/
 /* in the previous project - optimize get element by od and remove comments*/
-if (crackButtonElem)
+/*<!-- OPTIMIZE BG -->*/
+if (crackButtonElem) {
     crackButtonElem.onclick = handleUICrackRequest;
+}
