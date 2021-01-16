@@ -22,12 +22,6 @@ function handleUICrackRequest() {
         crackedPassElem.innerText = 'Crack Failed';
     }
 }
-/* in the previous project - optimize get element by od and remove comments*/
-/* in the previous project - optimize get element by od and remove comments*/
-/* in the previous project - optimize get element by od and remove comments*/
-/* in the previous project - optimize get element by od and remove comments*/
-/* in the previous project - optimize get element by od and remove comments*/
-/*<!-- OPTIMIZE BG -->*/
 if (crackButtonElem) {
     crackButtonElem.onclick = handleUICrackRequest;
 }
