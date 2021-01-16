@@ -1,2 +1,2 @@
-# ShowMeTheIP
-Interface for retrieving IP &amp; Country of a client
+# HashCracker
+Just cracking simple MD5 hashes.
